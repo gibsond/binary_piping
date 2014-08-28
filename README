@@ -1,0 +1,15 @@
+August 2011, Daniel Gibson
+
+This code solves the problem of wanting to convert ASCII characters to Binary in order to inject them into another program that needs binary by way of linux/UNIX pipes.  Two programs were created txttobin using C++ and bintotxt using python.  The two different languages were used to illustrate coding differences, but work essentially the same.
+
+Using Piping with the txttobin command:
+
+1.  echo '2' | ./txttobin
+
+2.  cat two | ./txttobin  - where two is a file containing '2'.
+
+3.  ./txttobin < two  - where two is a file containing '2'.
+
+4.  echo '44414e' | ./txttobin | more - prints 'DAN' to the screen. ***
+
+
